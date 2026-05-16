@@ -1,0 +1,29 @@
+{
+  "name": "buymarjet",
+  "version": "1.0.0",
+  "description": "Plataforma de inversión tipo fintech",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend & npm run dev --workspace=backend",
+    "build": "npm run build --workspaces",
+    "start": "npm start --workspace=backend",
+    "lint": "npm run lint --workspaces",
+    "test": "npm test --workspaces",
+    "db:setup": "npm run db:setup --workspace=backend",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "keywords": [
+    "fintech",
+    "investment",
+    "ecommerce",
+    "platform"
+  ],
+  "author": "Negociosrentables MXN",
+  "license": "MIT"
+}
